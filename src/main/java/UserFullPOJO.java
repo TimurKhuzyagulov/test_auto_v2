@@ -1,5 +1,5 @@
 public class UserFullPOJO {
-    //файл для десериадизации
+
     private boolean success;
     private UserPOJO user;
 

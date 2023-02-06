@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class OrdersPOJO {
-    //файл для десериализации
+
     private String _id;
     private String[] ingredients;
     private String status;

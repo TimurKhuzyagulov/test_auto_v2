@@ -3,7 +3,7 @@ import io.restassured.response.ValidatableResponse;
 import static io.restassured.RestAssured.given;
 
 public class OrderApi extends SpecificationAPI{
-    //Настройки API для эндпойтнов заказа
+
     public static final String PATH_API="/api/orders";
 
     public ValidatableResponse createOrderWithoutAuth(Ingredient ingredient){

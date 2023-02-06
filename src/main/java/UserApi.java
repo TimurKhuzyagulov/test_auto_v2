@@ -3,7 +3,7 @@ import io.restassured.response.ValidatableResponse;
 import static io.restassured.RestAssured.given;
 
 public class UserApi extends SpecificationAPI{
-    //Настройки API для эндпойтнов пользователя
+
 
     private static final String PATH_CREATE="/api/auth/register";
     private static final String PATH_AUTH="/api/auth/login";

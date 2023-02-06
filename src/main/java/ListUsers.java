@@ -1,5 +1,5 @@
 public class ListUsers {
-    //спиок пользователей для тестирования
+
     static User userTestDefault = new User("default_1@mail.ru", "19625", "Dekab_1");
     static User userTestWithoutEmail = new User("","123","test10");
     static User userTestWithoutPassword = new User("test085@test.ru", "","test10");

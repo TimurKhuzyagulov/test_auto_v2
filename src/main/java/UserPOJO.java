@@ -1,5 +1,5 @@
 public class UserPOJO {
-    //файл для десериадизации
+
     private String email;
     private String name;
 

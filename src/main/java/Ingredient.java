@@ -1,5 +1,5 @@
 public class Ingredient {
-
+    //Класс для сериализации Ingredient
     private String[] ingredients;
 
     public String[] getIngredients() {

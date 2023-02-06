@@ -10,7 +10,7 @@ import static org.apache.http.HttpStatus.SC_FORBIDDEN;
 import static org.apache.http.HttpStatus.SC_OK;
 
 public class createUserTest {
-
+//тесты для создания пользователя
     static UserApi userApi;
 
     @Before

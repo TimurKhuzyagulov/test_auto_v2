@@ -1,5 +1,5 @@
 
-//Класс для сериализации
+//Класс для сериализации User
 public class User {
     private String email;
     private String password;

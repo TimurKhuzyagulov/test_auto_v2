@@ -9,7 +9,7 @@ import static org.apache.http.HttpStatus.SC_OK;
 import static org.apache.http.HttpStatus.SC_UNAUTHORIZED;
 
 public class loginUserTest {
-
+//тесты для авторизации пользователя
     static UserApi userApi;
 
     @Before

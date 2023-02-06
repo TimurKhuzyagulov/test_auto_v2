@@ -15,7 +15,7 @@ import static org.apache.http.HttpStatus.SC_OK;
 import static org.apache.http.HttpStatus.SC_UNAUTHORIZED;
 
 public class getOrdersCurrentUserTest {
-
+//тесты для получения списка заказов
     static OrderApi orderApi;
     static UserApi userApi;
 

@@ -10,6 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.*;
 
 public class editUserTest {
+    //тесты для редактирования пользователя
     static UserApi userApi;
 
     @Before

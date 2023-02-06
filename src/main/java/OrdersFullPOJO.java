@@ -1,6 +1,7 @@
 import java.util.List;
 
 public class OrdersFullPOJO {
+    //файл для десериализации
     private boolean success;
     private List<OrdersPOJO> orders;
     private int total;

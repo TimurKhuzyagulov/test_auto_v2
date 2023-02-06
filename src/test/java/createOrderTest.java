@@ -8,6 +8,7 @@ import org.junit.Test;
 import static org.apache.http.HttpStatus.*;
 
 public class createOrderTest {
+    //тесты для создания заказа
     static OrderApi orderApi;
     static UserApi userApi;
 

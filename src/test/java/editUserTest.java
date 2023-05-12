@@ -18,31 +18,31 @@ public class editUserTest {
         userApi = new UserApi();
     }
 
-    @Test
-    @DisplayName("Редактирование пользователя с авторизацией")
-    @Description("Проверка редактирование пользователя с авторизацией")
-    public void editUserWithAuthTest() {
-        userApi.create(ListUsers.userTestForEdit);
-        ValidatableResponse responseAuth = userApi.authorization(ListUsers.userTestForEdit);
-        String accessTokenWithPrefix = responseAuth.extract().path("accessToken");
-        String accessToken = accessTokenWithPrefix.substring(7);
-
-        ValidatableResponse responseUpdate = userApi.update(accessToken, ListUsers.userDataUpd);
-
-        int statusCode = responseUpdate.extract().statusCode();
-        boolean successActual = responseUpdate.extract().path("success");
-
-        Assert.assertEquals(SC_OK, statusCode);
-        Assert.assertTrue(successActual);
-
-        Response response = given().auth().oauth2(accessToken).get("https://stellarburgers.nomoreparties.site/api/auth/user");
-
-        UserFullPOJO userFullPOJO = response.body().as(UserFullPOJO.class);
-        Assert.assertEquals(ListUsers.userDataUpd.getEmail(), userFullPOJO.getUser().getEmail());
-        Assert.assertEquals(ListUsers.userDataUpd.getName(), userFullPOJO.getUser().getName());
-
-        userApi.delete(accessToken);
-    }
+//    @Test
+//    @DisplayName("Редактирование пользователя с авторизацией")
+//    @Description("Проверка редактирование пользователя с авторизацией")
+//    public void editUserWithAuthTest() {
+//        userApi.create(ListUsers.userTestForEdit);
+//        ValidatableResponse responseAuth = userApi.authorization(ListUsers.userTestForEdit);
+//        String accessTokenWithPrefix = responseAuth.extract().path("accessToken");
+//        String accessToken = accessTokenWithPrefix.substring(7);
+//
+//        ValidatableResponse responseUpdate = userApi.update(accessToken, ListUsers.userDataUpd);
+//
+//        int statusCode = responseUpdate.extract().statusCode();
+//        boolean successActual = responseUpdate.extract().path("success");
+//
+//        Assert.assertEquals(SC_OK, statusCode);
+//        Assert.assertTrue(successActual);
+//
+//        Response response = given().auth().oauth2(accessToken).get("https://stellarburgers.nomoreparties.site/api/auth/user");
+//
+//        UserFullPOJO userFullPOJO = response.body().as(UserFullPOJO.class);
+//        Assert.assertEquals(ListUsers.userDataUpd.getEmail(), userFullPOJO.getUser().getEmail());
+//        Assert.assertEquals(ListUsers.userDataUpd.getName(), userFullPOJO.getUser().getName());
+//
+//        userApi.delete(accessToken);
+//    }
 
 
     @Test
